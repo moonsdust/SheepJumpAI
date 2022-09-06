@@ -1,6 +1,6 @@
 # Sheep Jump AI (Work in Progress)
 
-![Sheep Jump AI](./imgs/game.png)
+![Sheep Jump AI](./images/game.png)
 
 Sheep Jump AI is a self-learning A.I. that plays a game, where a sheep jumps to avoid fences, using the genetic algorithm. Implementation of the genetic algorithm is a work in progress right now.
 
