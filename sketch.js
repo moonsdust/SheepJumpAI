@@ -51,12 +51,12 @@ function draw() {
         x2 = width;
     }
 
-    // creates parent sheeps
+    // creates parent sheep
     for (let sheep of sheeps) {
         sheep.show();
     }
 
-    // creates new generation of sheeps 
+    // creates new generation of sheep
     if (sheeps.length == 2) {
         nextGeneration();
     }
@@ -74,7 +74,7 @@ function draw() {
                 text('Hit!', 100, 200);
                 textAlign(CENTER, CENTER);
                 sheeps.splice(sheep, 1);
-                // check if there is 0 sheeps left
+                // check if there is 0 sheep left
                 if (sheeps.length == 0) {
                     textSize(30);
                     text('Game Over!', 285, 200);
