@@ -15,7 +15,7 @@ class Sheep {
 
         // Setting up neural network for sheep - makes decision if sheep should jump or not
         // NeuralNetwork(Number of input nodes, Number of nodes in hidden layer, Number of output nodes)
-        this.brain = new NeuralNetwork(5, 10, 2);
+        this.brain = new NeuralNetwork(5, 30, 2);
     }
 
     // jump function 
