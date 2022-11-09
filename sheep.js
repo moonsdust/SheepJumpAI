@@ -20,7 +20,7 @@ class Sheep {
 
     // jump function 
     jump() {
-        // sheep can only jump if its on the ground
+        // sheep can only jump if it's on the ground
         if (this.y == (height - this.r) - 40) {
             this.vy = -27; // Moves sheep up 
         }
