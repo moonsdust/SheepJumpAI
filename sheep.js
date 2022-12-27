@@ -4,7 +4,7 @@ class Sheep {
         this.r = 54
 
         // Position
-        this.x = 450;
+        this.x = 45;
         this.y = (height - this.r) + 40; // Max y position
 
         // Velocity 
