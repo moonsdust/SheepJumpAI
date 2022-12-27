@@ -14,15 +14,15 @@ html {
     background-size: cover;
     font-family: regularFont;
     color: #4f403b;
-    display: flex;
+/*     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px, 10px, 10px, 10px;
+    padding: 10px, 10px, 10px, 10px; */
 }
-body {
+/* body {
     display: block;
     text-align: center;
-}
+} */
 h1, h4 {
     font-family: boldFont;
 }
