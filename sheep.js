@@ -5,7 +5,7 @@ class Sheep {
 
         // Position
         this.x = 45;
-        this.y = (height - this.r) + 40; // Max y position
+        this.y = (height - this.r) + 33; // Max y position
 
         // Velocity 
         this.vy = 0; 
@@ -15,13 +15,13 @@ class Sheep {
 
         // Setting up neural network for sheep - makes decision if sheep should jump or not
         // NeuralNetwork(Number of input nodes, Number of nodes in hidden layer, Number of output nodes)
-        this.brain = new NeuralNetwork(5, 30, 2);
+        this.brain = new NeuralNetwork(5, 40, 2);
     }
 
     // jump function 
     jump() {
         // sheep can only jump if it's on the ground
-        if (this.y == (height - this.r) + 40) {
+        if (this.y == (height - this.r) + 33) {
             this.vy = -27; // Moves sheep up 
         }
     }
@@ -30,7 +30,7 @@ class Sheep {
     move() {
         this.y += this.vy;
         this.vy += this.gravity;
-        this.y = constrain(this.y, 0, (height - this.r) + 40);
+        this.y = constrain(this.y, 0, (height - this.r) + 33);
     }
 
     // think function 
