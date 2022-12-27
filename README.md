@@ -10,7 +10,7 @@ Game is inspired by Google Chrome's dinosaur game.
 
 ## How The Game Works (Work in Progress)
 
-Currently 10 sheep, each with a neural network attach to them, will spawn and a sheep is eliminated when it hits a fence (sometimes there are sheep that are invincible to fences 👀). If there are 0 sheep left, the game is over. When there are 2 sheep left, a new generation of 10 sheep is created. Refresh your browser to spawn a new group of 10 sheep.
+Currently 10 sheep, each with a neural network attach to them, will spawn and a sheep is eliminated when it hits a fence (sometimes there are sheep that are invincible to fences 👀). If there are 0 sheep left, the game is over. When there are 2 sheep left, a new generation of 10 sheep is spawned. Refresh the website to spawn a new group of 10 sheep.
 
 ## How the Genetic Algorithm Works
 

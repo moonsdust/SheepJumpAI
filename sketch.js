@@ -91,7 +91,9 @@ function draw() {
             sheep.think(f);
             // if fence hits sheep
             if (f.hits(sheep)) {
-                textSize(30);
+                textSize(25);
+                textFont('regularFont');
+                fill(115, 87, 77);
                 text('Hit!', 100, 200);
                 textAlign(CENTER, CENTER);
                 sheeps.splice(sheep, 1);
@@ -102,6 +104,8 @@ function draw() {
                     time = 0;
                     select("#highestscore").html("Highest Score: " + highestScore);
                     textSize(30);
+                    textFont('regularFont');
+                    fill(115, 87, 77);
                     text('Game Over!', 290, 200);
                     textAlign(CENTER, CENTER);
                     noLoop();
