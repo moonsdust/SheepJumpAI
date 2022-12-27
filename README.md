@@ -18,4 +18,4 @@ Coming soon!
 
 ## Tools Used and More
 
-Built using p5.js, JavaScript, Daniel Shiffman's Neural Network Library, and Aseprite. Sheep and fence graphics created by me and background and ground graphics were redesigned from Flappy Bird.
+Built using p5.js, JavaScript, HTML, CSS, Daniel Shiffman's Neural Network Library, and Aseprite. Sheep and fence graphics created by me and background and ground graphics were redesigned from Flappy Bird.
