@@ -1,0 +1,27 @@
+/* Fonts */
+@font-face {
+    font-family: GT Walsheim;
+    src: url("fonts/GTWalsheimPro-Bold.ttf");
+}
+@font-face {
+    font-family: GT Walsheim Regular;
+    src: url("fonts/GTWalsheimPro-Regular.ttf");
+}
+html {
+    background-color: #d7a48c;
+    background-image: linear-gradient(#d4c4ac, #d4c9b8,#e0bba3, #d7a48c);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: GT Walsheim Regular;
+    color: #4f403b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body {
+    display: block;
+    text-align: center;
+}
+h1 {
+    font-family: GT Walsheim;
+}

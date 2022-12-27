@@ -1,4 +1,4 @@
-const TOTAL = 100; // Population Size 
+const TOTAL = 50; // Population Size 
 let sheeps = [];
 let sheepImg;
 let bgImg; 
@@ -18,11 +18,13 @@ function preload() {
 
 // sets up canvas and creates sheep
 function setup() {
-    createCanvas(600, 400);
+    var canvas = createCanvas(600, 400);
     for (let i = 0; i < TOTAL; i++){
         sheeps[i] = new Sheep();
     }
     x2 = width;
+    // Place canvas inside #game div
+    canvas.parent('game');
 }
 
 // // sheep jumps when space is pressed
@@ -34,7 +36,7 @@ function setup() {
 
 // draw function 
 function draw() {
-    if (random(1) < 0.01) {
+    if (random(1) < 0.03) {
         fences.push(new Fence());
     }
     // scrolling bg 
@@ -84,4 +86,9 @@ function draw() {
             }
         }
     }
+    // function resetButton() {
+    //     for (let i = 0; i < TOTAL; i++){
+    //         sheeps[i] = new Sheep();
+    //     }
+    // }
 }
