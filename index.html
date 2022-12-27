@@ -11,7 +11,6 @@
   <!--style.css-->
   <link rel="stylesheet" type="text/css" href="style.css">
   <meta charset="utf-8" />
-
 </head>
 
 <body>
@@ -24,7 +23,12 @@
     <script language="javascript" type="text/javascript" src="sheep.js"></script>
     <script language="javascript" type="text/javascript" src="fence.js"></script>
   </div>  
-  <p>To reset the game: Refresh your browser</p>
+  <p>To reset the game with 10 sheep: refresh your browser.</p>
+  <h4>How it works (will change soon): </h5><p>Currently 10 sheep, each with a neural network attach to them, will spawn and a sheep is eliminated when it hits a fence. 
+    <br>If there are 0 sheep left, the game is over. When there are 2 sheep left, a new generation of sheep (10 sheep) are created.</p>
+  <!-- <input type="number" id="number" name="number" min="0" max="50">
+  <button onclick="resetButton(document.getElementById('number').value)">Convert</button> -->
+  <p id = "credit">Created by Emily Su using p5.js, Toy Neural Network Library, HTML, CSS, and JavaScript.</p>
 </body>
 
 </html>

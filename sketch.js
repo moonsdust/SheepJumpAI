@@ -1,9 +1,10 @@
-const TOTAL = 50; // Population Size 
+const TOTAL = 10; // Population Size 
 let sheeps = [];
 let sheepImg;
 let bgImg; 
 let fenceImg;
 let fences = [];
+// let slider;
 
 let x1 = 0 
 let x2; 
@@ -19,6 +20,7 @@ function preload() {
 // sets up canvas and creates sheep
 function setup() {
     var canvas = createCanvas(600, 400);
+    // slider = createSlider(1, 100, 1);
     for (let i = 0; i < TOTAL; i++){
         sheeps[i] = new Sheep();
     }
@@ -36,16 +38,16 @@ function setup() {
 
 // draw function 
 function draw() {
-    if (random(1) < 0.03) {
+    if (random(1) < 0.01) {
         fences.push(new Fence());
     }
     // scrolling bg 
-	image(bgImg, x1, 0, width, height);
+    image(bgImg, x1, 0, width, height);
     image(bgImg, x2, 0, width, height);
-  
+
     x1 -= scrollSpeed;
     x2 -= scrollSpeed;
-  
+    
     if (x1 < -width){
         x1 = width;
     }
@@ -70,6 +72,7 @@ function draw() {
         for (let sheep of sheeps) {
             sheep.think(f);
             sheep.move();
+            // sheep.hasPassed(f);
             // if fence hits sheep
             if (f.hits(sheep)) {
                 textSize(30);
@@ -79,15 +82,18 @@ function draw() {
                 // check if there is 0 sheep left
                 if (sheeps.length == 0) {
                     textSize(30);
-                    text('Game Over!', 285, 200);
+                    text('Game Over!', 290, 200);
                     textAlign(CENTER, CENTER);
                     noLoop();
                 }
             }
+            // sheep.score();
         }
     }
-    // function resetButton() {
-    //     for (let i = 0; i < TOTAL; i++){
+    // // Resets number of sheeps 
+    // resetButton(number) {
+    //     total = number;
+    //     for (let i = 0; i < total; i++){
     //         sheeps[i] = new Sheep();
     //     }
     // }

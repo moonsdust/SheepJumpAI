@@ -1,27 +1,53 @@
 /* Fonts */
 @font-face {
-    font-family: GT Walsheim;
-    src: url("fonts/GTWalsheimPro-Bold.ttf");
+    font-family: boldFont;
+    src: url("fonts/a-bold-font.ttf");
 }
 @font-face {
-    font-family: GT Walsheim Regular;
-    src: url("fonts/GTWalsheimPro-Regular.ttf");
+    font-family: regularFont;
+    src: url("fonts/a-regular-font.ttf");
 }
 html {
     background-color: #d7a48c;
     background-image: linear-gradient(#d4c4ac, #d4c9b8,#e0bba3, #d7a48c);
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: GT Walsheim Regular;
+    font-family: regularFont;
     color: #4f403b;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px, 10px, 10px, 10px;
 }
 body {
     display: block;
     text-align: center;
 }
-h1 {
-    font-family: GT Walsheim;
+h1, h4 {
+    font-family: boldFont;
+}
+button {
+    font-family: regularFont;
+    font-size: 1em;
+    padding-top: 4.5px;
+    padding-bottom: 4.5px;
+    font-weight: bold;
+    color: #ffffff;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid #9c8474;
+    background-color: #9c8474;
+}
+
+button:hover{
+    cursor: pointer;
+}
+input[type=number] {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 20%;
+    border: none;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
 }

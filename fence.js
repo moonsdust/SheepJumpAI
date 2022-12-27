@@ -21,5 +21,4 @@ class Fence {
         // image(image, x position, y position, width, height)
         image(fenceImg, this.x, this.y, this.r, this.r + 40);
     }
-
 }
