@@ -5,7 +5,7 @@ class Sheep {
 
         // Position
         this.x = 45;
-        this.y = (height - this.r) + 100; // Max y position
+        this.y = (height - this.r) + 75; // Max y position
 
         // Velocity 
         this.vy = 0; 
@@ -21,7 +21,7 @@ class Sheep {
     // jump function 
     jump() {
         // sheep can only jump if it's on the ground
-        if (this.y == (height - this.r) + 100) {
+        if (this.y == (height - this.r) + 75) {
             this.vy = -27 - random(1.5); // Moves sheep up 
         }
     }
@@ -30,7 +30,7 @@ class Sheep {
     move() {
         this.y += this.vy;
         this.vy += this.gravity;
-        this.y = constrain(this.y, 0, (height - this.r) + 100);
+        this.y = constrain(this.y, 0, (height - this.r) + 75);
     }
 
     // think function 

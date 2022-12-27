@@ -23,7 +23,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: flex-start;
     align-items: center;
     text-align: center;
     padding: 10px, 10px, 10px, 10px;
@@ -31,6 +30,7 @@ body {
 /* text */
 h1, h2, h3, h4, h5 {
     font-family: boldFont;
+    margin-bottom: 10px;
 }
 span {
     font-family: boldFont;
@@ -38,6 +38,10 @@ span {
 }
 #how {
     width: 80%;
+    background-color: #d4c4ac;
+    padding: 10px;
+    border-radius: 20px;
+    border: 7px solid #4f403b;
 }
 #timer, #highestscore, #generation, #remaining {
     margin: 10px;
