@@ -5,6 +5,9 @@ let bgImg;
 let fenceImg;
 let fences = [];
 // let slider;
+let highestScore = 0;
+let time = 0;
+let generationCount = 1;
 
 let x1 = 0 
 let x2; 
@@ -27,6 +30,12 @@ function setup() {
     x2 = width;
     // Place canvas inside #game div
     canvas.parent('game');
+    // Timer
+    function timeIt(){
+        time++;
+        select('#timer').html("Time: " + time);
+    }
+    setInterval(timeIt, 1000);
 }
 
 // // sheep jumps when space is pressed
@@ -47,7 +56,7 @@ function draw() {
 
     x1 -= scrollSpeed;
     x2 -= scrollSpeed;
-    
+        
     if (x1 < -width){
         x1 = width;
     }
@@ -62,6 +71,14 @@ function draw() {
 
     // creates new generation of sheep
     if (sheeps.length == 2) {
+        // update counts
+        generationCount++;
+        highestScore = max(highestScore, time);
+        // reset time to 0
+        time = 0;
+        // Update counts in index.html
+        select("#highestscore").html("Highest Score: " + highestScore);
+        select("#generation").html("Generations: " +  generationCount);
         nextGeneration();
     }
 
@@ -70,24 +87,26 @@ function draw() {
         f.move();
         f.show();
         for (let sheep of sheeps) {
-            sheep.think(f);
             sheep.move();
-            // sheep.hasPassed(f);
+            sheep.think(f);
             // if fence hits sheep
             if (f.hits(sheep)) {
                 textSize(30);
                 text('Hit!', 100, 200);
                 textAlign(CENTER, CENTER);
                 sheeps.splice(sheep, 1);
+                select("#remaining").html("Sheep Remaining: " + sheeps.length);
                 // check if there is 0 sheep left
                 if (sheeps.length == 0) {
+                    highestScore = max(highestScore, time);
+                    time = 0;
+                    select("#highestscore").html("Highest Score: " + highestScore);
                     textSize(30);
                     text('Game Over!', 290, 200);
                     textAlign(CENTER, CENTER);
                     noLoop();
                 }
             }
-            // sheep.score();
         }
     }
     // // Resets number of sheeps 

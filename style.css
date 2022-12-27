@@ -1,4 +1,4 @@
-/* Fonts */
+/* fonts */
 @font-face {
     font-family: boldFont;
     src: url("fonts/a-bold-font.ttf");
@@ -14,18 +14,35 @@ html {
     background-size: cover;
     font-family: regularFont;
     color: #4f403b;
-/*     display: flex;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px, 10px, 10px, 10px; */
 }
-/* body {
-    display: block;
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: center;
     text-align: center;
-} */
-h1, h4 {
+    padding: 10px, 10px, 10px, 10px;
+}
+/* text */
+h1, h2, h3, h4, h5 {
     font-family: boldFont;
 }
+#how {
+    width: 80%;
+}
+#timer, #highestscore, #generation, #remaining {
+    margin: 10px;
+}
+#stats {
+    display: flex;
+    flex-direction: row;
+}
+/* button and input*/
 button {
     font-family: regularFont;
     font-size: 1em;
@@ -39,7 +56,6 @@ button {
     border: 1px solid #9c8474;
     background-color: #9c8474;
 }
-
 button:hover{
     cursor: pointer;
 }

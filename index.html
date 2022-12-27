@@ -18,17 +18,25 @@
   <script language="javascript" type="text/javascript" src="libraries/neuralnetwork/matrix.js"></script>
   <script language="javascript" type="text/javascript" src="geneticalgo.js"></script>
   <h1 id = "title">SheepJumpAI</h1>
+  <h5 id = "credit">Created by Emily Su</h5>
   <div id = "game">
     <script language="javascript" type="text/javascript" src="sketch.js"></script>
     <script language="javascript" type="text/javascript" src="sheep.js"></script>
     <script language="javascript" type="text/javascript" src="fence.js"></script>
   </div>  
-  <p>To reset the game with 10 sheep: refresh your browser.</p>
-  <h4>How it works (will change soon): </h5><p>Currently 10 sheep, each with a neural network attach to them, will spawn and a sheep is eliminated when it hits a fence. 
-    <br>If there are 0 sheep left, the game is over. When there are 2 sheep left, a new generation of sheep (10 sheep) are created.</p>
+    <!-- How it works-->
+  <p id = "how">To reset the game with 10 new sheep: refresh your browser. 
+  <br>Currently 10 sheep, each with a neural network attach to them, will spawn and a sheep is eliminated when it hits a fence (sometimes there are sheep that are invincible to fences 👀). 
+    If there are 0 sheep left, the game is over. When there are 2 sheep left, a new generation of 10 sheep is created.</p>
+  <!-- Stats -->
+  <div id="stats">
+    <h4 id = "timer">Time: 0</h4>
+    <h4 id = "highestscore">Highest Score: 0</h4>
+    <h4 id = "generation">Generations: 1</h4>
+    <h4 id = "remaining"> Sheep remaining: 10</h4>
+  </div>
   <!-- <input type="number" id="number" name="number" min="0" max="50">
   <button onclick="resetButton(document.getElementById('number').value)">Convert</button> -->
-  <p id = "credit">Created by Emily Su using p5.js, Toy Neural Network Library, HTML, CSS, and JavaScript.</p>
+  <h4 id = "speedslider">Change the speed:</h4>
 </body>
-
 </html>
