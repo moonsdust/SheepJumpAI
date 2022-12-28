@@ -18,4 +18,5 @@ Coming soon!
 
 ## Tools Used and More
 
-Built using p5.js, JavaScript, HTML, CSS, Toy Neural Network Library JS, and Aseprite. Sheep and fence graphics are created by me and background and ground graphics were redesigned from Flappy Bird.
+- Built using p5.js, JavaScript, HTML, CSS, Toy Neural Network Library JS, and Aseprite. 
+- Sheep and fence graphics are created by me and background and ground graphics were redesigned from Flappy Bird.
