@@ -15,7 +15,7 @@ class Sheep {
 
         // Setting up neural network for sheep - makes decision if sheep should jump or not
         // NeuralNetwork(Number of input nodes, Number of nodes in hidden layer, Number of output nodes)
-        this.brain = new NeuralNetwork(4, 40, 2);
+        this.brain = new NeuralNetwork(2, 40, 2);
     }
 
     // jump function 
@@ -36,10 +36,8 @@ class Sheep {
     // think function 
     think(fence) {
         let inputs = [];
-        inputs[0] = abs(this.x - fence.x) / width; 
-        inputs[1] = abs(this.y - fence.y) / height;
-        inputs[2] = width / abs(this.x - fence.x);
-        inputs[3] = height / abs(this.y - fence.y);
+        inputs[0] = abs(this.x - fence.x); 
+        inputs[1] = abs(this.y - fence.y);
         let output = this.brain.predict(inputs);
         if (output[0] > output[1]) {
             this.jump();
