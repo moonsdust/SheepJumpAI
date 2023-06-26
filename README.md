@@ -1,4 +1,4 @@
-# Sheep Jump AI (Work in Progress)
+# Sheep Jump AI
 
 ![Sheep Jump AI](./images/game.png)
 
