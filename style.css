@@ -10,7 +10,7 @@
 html {
     background-color: #d7a48c;
     background-image: linear-gradient(#d4c4ac, #d4c9b8,#e0bba3, #d7a48c);
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     background-size: cover;
     font-family: regularFont;
     color: #4f403b;
