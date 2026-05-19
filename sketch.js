@@ -13,6 +13,17 @@ let x1 = 0
 let x2; 
 let scrollSpeed = 2;
 
+// updates the game when window is resized
+function windowResized() {
+    resizeCanvas(windowWidth / 2, 400);
+    x1 = 0;
+    x2 = width;
+    for (let sheep of sheeps) {
+        // Position
+        sheep.x = width * 0.15;
+    }
+}
+
 // load images
 function preload() {
     sheepImg = createImg('images/sheep.gif'); // use createImg() to load in gifs
@@ -22,7 +33,7 @@ function preload() {
 
 // sets up canvas and creates sheep
 function setup() {
-    var canvas = createCanvas(600, 400);
+    var canvas = createCanvas(windowWidth / 2, 400);
     // slider = createSlider(1, 100, 1);
     for (let i = 0; i < TOTAL; i++){
         sheeps[i] = new Sheep();

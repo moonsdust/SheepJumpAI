@@ -3,7 +3,7 @@ class Fence {
         // Size
         this.r = 14;
         // Position 
-        this.x = 600; // Set as canvas's width
+        this.x = windowWidth / 2; // Set as canvas's width
         this.y = 294; 
     }
     // move function 
